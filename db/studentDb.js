@@ -42,6 +42,7 @@ class Roster {
             photoUrl = response.data.results[0].urls.regular;
         } catch (error) {
             console.log("Error getting data from Unsplash", error);
+            photoUrl = "https://placehold.co/600x400"
         }
 
         return photoUrl;
